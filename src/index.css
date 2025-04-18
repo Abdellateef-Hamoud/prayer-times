@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@200..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+}
+
+html {
+  direction: rtl;
+}
+
+body {
+  background: linear-gradient(to bottom, #162447, #0b284d);
+  
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  color: white;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px 25px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  max-width: 600px;
+  width: 100%;
+}
+
+.top-sec {
+  margin-bottom: 30px;
+}
+
+.city {
+  margin-bottom: 20px;
+}
+
+.city .search-input,
+.city select {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 5px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #1b1b2f;
+  color: #fff;
+}
+
+.city .search-input::placeholder {
+  color: #aaa;
+}
+
+.date {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.date h3 {
+  font-size: 24px;
+  color: #ffc947;
+  margin-bottom: 5px;
+}
+
+.date h4 {
+  font-size: 20px;
+}
+
+.prayer {
+  background-color: rgba(255, 255, 255, 0.07);
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.prayer:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.name_prayer {
+  font-weight: 600;
+  color: #ffc947;
+}
+
+.time_prayer {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .prayer {
+    font-size: 18px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .prayer p {
+    margin: 4px 0;
+  }
+
+  .city .search-input,
+  .city select {
+    font-size: 16px;
+  }
+}
+
+
